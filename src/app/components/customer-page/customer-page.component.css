@@ -1,0 +1,95 @@
+.div-filter {
+  padding: 10px;
+  margin: 10px;
+}
+
+.input-filter {
+  width: 200px;
+  margin: 20px;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.btn-success {
+  margin-left: 89%;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(71, 71, 71);
+  border-radius: 10px;
+  transition: transform 0.2s;
+  border: 2px rgb(71, 71, 71) solid;
+}
+
+.btn-success:hover {
+  background-color: #428bca;
+  color: black;
+  transform: scale(1.1);
+  border: 2px rgb(71, 71, 71) solid;
+}
+
+input {
+  border: 2px black solid;
+  border-radius: 10px;
+  background-color: #428bca;
+}
+
+input::placeholder {
+  color: white;
+}
+
+#Create {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(71, 71, 71);
+  border-radius: 10px;
+  transition: transform 0.2s;
+  border: 2px rgb(71, 71, 71) solid;
+}
+
+#Create:hover {
+  background-color: #428bca;
+  color: black;
+  transform: scale(1.1);
+  border: 2px rgb(71, 71, 71) solid;
+}
+
+#Update {
+  color: white;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(71, 71, 71);
+  border-radius: 10px;
+  transition: transform 0.2s;
+  border: 2px rgb(71, 71, 71) solid;
+}
+
+#Update:hover {
+  background-color: #428bca;
+  color: black;
+  transform: scale(1.1);
+  border: 2px rgb(71, 71, 71) solid;
+}
+
+#Back {
+  color: white;
+  margin-left: 89%;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(71, 71, 71);
+  border-radius: 10px;
+  transition: transform 0.2s;
+  border: 2px rgb(71, 71, 71) solid;
+}
+
+#Back:hover {
+  background-color: #428bca;
+  color: black;
+  transform: scale(1.1);
+  border: 2px rgb(71, 71, 71) solid;
+}

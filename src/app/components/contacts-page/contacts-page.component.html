@@ -1,0 +1,43 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2 class="panel-title">Contacts</h2>
+  </div>
+
+  <div class="panel-body">
+    <div>
+      <span class="filter">Filter your contacts by:</span>
+      <div class="div-filter">
+        <input [(ngModel)]="searchFirst" class="input-filter" type="text" placeholder="First Name" />
+        <input [(ngModel)]="searchLast" class="input-filter" type="text" placeholder="Last Name" />
+        <input [(ngModel)]="searchPhone" class="input-filter" type="text" placeholder="Phone Name" />
+        <input [(ngModel)]="searchEmail" class="input-filter" type="email" placeholder="Email Address" />
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let customer of customer; let num = index;">
+            <ng-container *ngIf="!filterCustomer(customer)">
+              <th scope="row">
+                {{num+1}}
+              </th>
+
+              <td>{{customer.first}}</td>
+              <td>{{customer.last}}</td>
+              <td>{{customer.phone}}</td>
+              <td>{{customer.email}}</td>
+            </ng-container>
+          </tr>
+        </tbody>
+      </table>
+      <div id="Footer"></div>
+    </div>
